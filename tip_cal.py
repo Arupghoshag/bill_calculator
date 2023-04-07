@@ -1,0 +1,7 @@
+bill = float(input("type your bill: "))
+tip_select = int(input("Percentage of tip would you like to give? "))
+no_of_mem = int(input("type the number of members: "))
+tip = round(bill * (tip_select / 100), 2)
+total_bill = round(bill + tip, 2)
+bill_per_head = round(total_bill / no_of_mem, 2)
+print(f"Tip is {tip}, Total bill is {total_bill}, Per head bill is {bill_per_head}")
